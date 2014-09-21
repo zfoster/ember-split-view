@@ -3,24 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EmberSplitView</title>
+    <title>EmberSplitViewDemo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <base href="/ember-split-view/" />
+    <base href="/">
 
-    <link rel="stylesheet" href="assets/vendor-71c590b0114195268fb952324c7a3bb7.css">
-    <link rel="stylesheet" href="assets/ember-split-view-528009ad2d9635ca478e27563b3c3c88.css">
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ember-split-view-demo.css">
   </head>
   <body>
     <script>
-      window.EmberSplitViewENV = {"baseURL":"/ember-split-view/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{}};
-      window.EmberENV = window.EmberSplitViewENV.EmberENV;
+      window.EmberENV = {"modulePrefix":"ember-split-view-demo","environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
     </script>
-    <script src="assets/vendor-e9615cf850af24e624b9348c7f9c35e8.js"></script>
-    <script src="assets/ember-split-view-cf9cb218c47445871b44abbda28ee09a.js"></script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ember-split-view-demo.js"></script>
     <script>
-      window.EmberSplitView = require('ember-split-view/app')['default'].create(EmberSplitViewENV.APP);
+      window.EmberSplitViewDemo = require('ember-split-view-demo/app')['default'].create({"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true});
     </script>
   </body>
 </html>
