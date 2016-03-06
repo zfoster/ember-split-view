@@ -92,7 +92,9 @@ export default Ember.Component.extend({
         }
       }
       Ember.run.next(this, function() {
-        this._setStyle();
+        if (this._state !== 'destroying') {
+          this._setStyle();
+        }
       });
       Ember.run.scheduleOnce('afterRender', this, function() {
         // must do this in afterRender so that the parent has calculated its width and height
